@@ -1,0 +1,25 @@
+{
+    "name": "armabot",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "",
+    "exports": "./build/index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "tsc && ts-node build/index.js",
+        "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "typescript": "^4.7.4"
+    },
+    "dependencies": {
+        "bufferutil": "^4.0.6",
+        "discord.js": "^14.0.3",
+        "dotenv": "^16.0.1",
+        "lowdb": "^3.0.0",
+        "utf-8-validate": "^5.0.9"
+    }
+}
